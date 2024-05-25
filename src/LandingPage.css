@@ -40,29 +40,29 @@
 }
 
 .sky-img {
-  width: 1500px; /* Make sure the image spans the entire width of its container */
-  height: auto; /* Allow the image to adjust its height proportionally */
+  min-height: 100vh;
+  min-width: 100vw;  /* min width is 100% of the viewport width */
   z-index: -1;
 }
 
 .rocket-img {
   overflow: hidden;
-  height: 850px;
-  width: 650px;
+  height: 750px;
+  width: 550px;
   position: absolute;
   left: 0px;
   top: 50px;
-  transform: translateY(50px) translateX(-100px) rotate(25deg);
-  animation: flyIn 1s ease forwards;
+  transform: translateY(50px) translateX(-100px) rotate(20deg);
+  animation: flyIn 1.4s ease forwards;
 }
 
 @keyframes flyIn {
   from { 
     left: -100px;
-    top: 100px; 
+    top: 500px; 
   }
   to { 
-    left: 100px;
-    top: 0px; 
+    left: 200px;
+    top: 70px; 
   }
 }
