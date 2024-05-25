@@ -25,9 +25,9 @@ app.post('/submit-form', async (req, res) => {
         if (formData.role === 'mentee') {
             // Save mentee data to MongoDB
             const mentee = new Mentee(formData);
-            await mentee.save();
+            await mentee.save(); // saves to mongodb
 
-            // Send mentee data to Gemini API along with mentor database
+            // Send mentee + mentor data to Gemini API along with mentor database
             const mentors = await Mentor.find();
             const geminiResponse = await axios.post('https://gemini-api.example.com/process', {
                 menteeData: formData,
