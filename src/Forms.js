@@ -22,6 +22,12 @@ const Forms = () => {
                     value={title}
                     onChange={(e) => setTitle(e.target.value)}
                 />
+                <input 
+                    type="text"
+                    required
+                    value={title}
+                    onChange={(e) => setTitle(e.body.value)}
+                />
             </form>
         </div>
     );
