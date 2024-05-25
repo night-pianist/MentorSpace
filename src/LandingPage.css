@@ -1,6 +1,8 @@
 * {
   background: none;
   overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
 }
 
 .landing-page {
@@ -13,7 +15,7 @@
   display: flex;
   gap: 0px; /* space between buttons */
   justify-content: right;
-  margin-right: 40px;
+  margin-right: 20px;
   background-color: #07071f;
 }
 
@@ -47,14 +49,19 @@
   height: 850px;
   width: 650px;
   position: absolute;
-  left: 150px;
-  top: 150px;
-  transform: rotate(20deg);
+  left: 0px;
+  top: 50px;
+  transform: translateY(50px) translateX(-100px) rotate(25deg);
+  animation: flyIn 1s ease forwards;
 }
 
-/* @keyframes flyIn {
+@keyframes flyIn {
   from { 
-    top: 150px; 
+    left: -100px;
+    top: 100px; 
   }
-  to { top: 50px; }
-} */
+  to { 
+    left: 100px;
+    top: 0px; 
+  }
+}
