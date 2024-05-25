@@ -79,6 +79,7 @@
 
 .button-64:active,
 .button-64:hover {
+  background: #AF40FF;
   outline: 0;
 }
 
@@ -91,9 +92,9 @@
   transition: 300ms;
 }
 
-.button-64:hover span {
+/* .button-64:hover span {
   background: none;
-}
+} */
 
 @media (min-width: 768px) {
   .button-64 {
