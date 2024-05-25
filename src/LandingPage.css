@@ -11,20 +11,21 @@
   min-width: 100vw;  /* min width is 100% of the viewport width */
 }
 
-.btns {
+.btn-container {
   display: flex;
   gap: 0px; /* space between buttons */
   justify-content: right;
   margin-right: 20px;
-  background-color: #07071f;
 }
 
 .landing-page button {
-  color: white;
+  background-color: white;
+  color: #07071f;
   padding: 16px;
   margin: 16px;
   height: 20px;
   width: 80px;
+  border-radius: 8px;
   text-align: center;
   display: flex;
   align-items: center; /* center vertically */

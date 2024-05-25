@@ -5,7 +5,7 @@ import './LandingPage.css';
 const LandingPage = () => {
     return ( 
         <div className="landing-page">
-            <div className="btns">
+            <div className="btn-container">
                 <button>login</button>
                 <button>sign up</button>
             </div>
