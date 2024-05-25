@@ -10,8 +10,8 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
       <div className="btn-container">
-        <button onClick={register} className="button-64" type="button">Sign Up</button>
         <button onClick={login} className="button-64" type="button">Log In</button>
+        <button onClick={register} className="button-64" type="button">Sign Up</button>
       </div>
       <img src={sky} alt="sky" className="sky-img" />
       <img src={rocket} alt="rocket" className="rocket-img" />

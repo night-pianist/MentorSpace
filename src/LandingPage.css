@@ -13,9 +13,10 @@
 
 .btn-container {
   display: flex;
-  gap: 0px; /* space between buttons */
+  gap: 20px; /* space between buttons */
   justify-content: right;
-  margin-right: 20px;
+  margin-right: 16px;
+  padding: 16px;
 }
 
 .landing-page img {
@@ -97,6 +98,7 @@
 @media (min-width: 768px) {
   .button-64 {
     font-size: 24px;
-    min-width: 196px;
+    min-width: 156px;
+    min-height: 40px;
   }
 }
