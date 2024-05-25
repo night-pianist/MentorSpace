@@ -1,6 +1,4 @@
 * {
-  /* font-family: "Quicksand"; */
-  /* color: #333; */
   background: none;
   overflow-x: hidden;
 }
@@ -10,14 +8,6 @@
   min-height: 100vh;
   min-width: 100vw;  /* min width is 100% of the viewport width */
 }
-
-/* .background-img {
-  position: fixed; Position the container relative to the viewport
-  bottom: 0; Position the container at the bottom of the viewport
-  left: 0; Position the container at the left side of the viewport
-  width: 100%; Make sure the container spans the entire width of the viewport
-  z-index: -1; Move the background behind other elements
-} */
 
 .btns {
   display: flex;
@@ -53,20 +43,18 @@
 }
 
 .rocket-img {
-  /* overflow: hidden; */
-  margin-top: 10%;
-  height: 800px;
-  width: 600px;
-  /* animation: flyIn 1.5s forwards; animation duration and timing */
-  /* transform: rotate(30deg); */
-  /* margin-top: 10%; */
+  overflow: hidden;
+  height: 850px;
+  width: 650px;
   position: absolute;
-  bottom: 0;
-  right: 0;
-  transform: translate(0%, 0%);
+  left: 150px;
+  top: 150px;
+  transform: rotate(20deg);
 }
 
-@keyframes flyIn {
-  /* from { top: 200px; } */
-  /* to { top: 50px; } */
-}
+/* @keyframes flyIn {
+  from { 
+    top: 150px; 
+  }
+  to { top: 50px; }
+} */
