@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { KindeProvider } from '@kinde-oss/kinde-auth-react';
 import LandingPage from './LandingPage';
+import AfterLoginPage from './AfterLoginPage';
 // import other components if needed
 
 const App = () => (
@@ -15,6 +16,7 @@ const App = () => (
     <Router>
       <Routes>
         <Route path="/" element={<LandingPage />} />
+        <Route path="/after-login" element={<AfterLoginPage />} />
         {/* Add other routes if needed */}
       </Routes>
     </Router>
