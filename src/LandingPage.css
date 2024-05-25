@@ -1,0 +1,72 @@
+* {
+  /* font-family: "Quicksand"; */
+  /* color: #333; */
+  background: none;
+  overflow-x: hidden;
+}
+
+.landing-page {
+  background: #07071f;
+  min-height: 100vh;
+  min-width: 100vw;  /* min width is 100% of the viewport width */
+}
+
+/* .background-img {
+  position: fixed; Position the container relative to the viewport
+  bottom: 0; Position the container at the bottom of the viewport
+  left: 0; Position the container at the left side of the viewport
+  width: 100%; Make sure the container spans the entire width of the viewport
+  z-index: -1; Move the background behind other elements
+} */
+
+.btns {
+  display: flex;
+  gap: 0px; /* space between buttons */
+  justify-content: right;
+  margin-right: 40px;
+  background-color: #07071f;
+}
+
+.landing-page button {
+  color: white;
+  padding: 16px;
+  margin: 16px;
+  height: 20px;
+  width: 80px;
+  text-align: center;
+  display: flex;
+  align-items: center; /* center vertically */
+  justify-content: center; /* center horizontally */
+  overflow-y: hidden;
+  cursor: pointer;
+}
+
+.landing-page img {
+  padding: 0px;
+  margin: 0px;
+}
+
+.sky-img {
+  width: 1500px; /* Make sure the image spans the entire width of its container */
+  height: auto; /* Allow the image to adjust its height proportionally */
+  z-index: -1;
+}
+
+.rocket-img {
+  /* overflow: hidden; */
+  margin-top: 10%;
+  height: 800px;
+  width: 600px;
+  /* animation: flyIn 1.5s forwards; animation duration and timing */
+  /* transform: rotate(30deg); */
+  /* margin-top: 10%; */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(0%, 0%);
+}
+
+@keyframes flyIn {
+  /* from { top: 200px; } */
+  /* to { top: 50px; } */
+}
