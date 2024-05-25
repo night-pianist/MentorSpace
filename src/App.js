@@ -1,10 +1,14 @@
 import './App.css';
-import Navbar from './Navbar';
+import LandingPage from './LandingPage'
+// import LandingPageNavbar from './LandingPageNavbar';
+// import Navbar from './Navbar';
+// import {Link} from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      {/* <LandingPageNavbar /> */}
+      <LandingPage />
     </div>
   );
 }
