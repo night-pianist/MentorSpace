@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { KindeProvider } from '@kinde-oss/kinde-auth-react';
 import LandingPage from './LandingPage';
 import AfterLoginPage from './AfterLoginPage';
+import MatchedPage from './MatchedPage';
 // import other components if needed
 
 const App = () => (
@@ -15,9 +16,10 @@ const App = () => (
   >
     <Router>
       <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/after-login" element={<AfterLoginPage />} />
+        {/* <Route path="/" element={<LandingPage />} />
+        <Route path="/after-login" element={<AfterLoginPage />} /> */}
         {/* Add other routes if needed */}
+        <Route path="/" element={<MatchedPage />} />
       </Routes>
     </Router>
   </KindeProvider>

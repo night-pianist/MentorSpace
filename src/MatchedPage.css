@@ -1,0 +1,33 @@
+.matched-page {
+    padding: 0px;
+    margin: 0px;
+    background-color: purple;
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
+    flex-direction: column;
+}
+
+.title {
+    /* position: fixed; */
+    padding: 10px; /* Add padding for spacing */
+    z-index: 999; /* Set a high z-index to ensure the element appears on top */
+    color: black;
+    font-size: 2.5em;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+}
+
+.content-holder {
+    color: blue;
+    display: flex; /* Enable flexbox layout */
+    align-items: center; /* Center items horizontally */
+}
+
+.pfp-img {
+    height: 400px;
+    width: auto;
+    border-radius: 1000px;
+}
