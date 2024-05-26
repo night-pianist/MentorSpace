@@ -1,10 +1,10 @@
 .matched-page {
     padding: 0px;
     margin: 0px;
-    background-color: purple;
+    background-color: #07071f;
     display: flex;
     text-align: center;
-    justify-content: center; 
+    /* justify-content: center;  */
     align-items: center;
     height: 100vh; 
     flex-direction: column;
@@ -12,9 +12,10 @@
 
 .title {
     /* position: fixed; */
-    padding: 10px; /* Add padding for spacing */
+    padding: 20px;
+    padding-bottom: 50px;
     z-index: 999; /* Set a high z-index to ensure the element appears on top */
-    color: black;
+    color: white;
     font-size: 2.5em;
     flex-direction: column; /* Stack elements vertically */
     align-items: center;
