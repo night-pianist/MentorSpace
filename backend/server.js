@@ -137,7 +137,7 @@ app.post('/submit-form', async (req, res) => {
             res.status(400).json({ error: 'Invalid role specified' });
         }
     } catch (error) {
-        console.error('Error handling form submission 11111:', error);
+        console.error('Error handling form submission:', error);
         res.status(500).json({ error: 'An error occurred while handling form submission' });
     }
 });
