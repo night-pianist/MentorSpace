@@ -61,6 +61,7 @@ const mongoose = require('mongoose');
 const Mentee = require('./models/Mentee');
 const Mentor = require('./models/Mentor');
 const dotenv = require('dotenv');
+const cors = require('cors');
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 dotenv.config();
@@ -143,3 +144,36 @@ app.post('/submit-form', async (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
+
+// searches entries in mongodb based on name
+const port = 3000;
+
+// Middleware
+app.use(cors());
+app.use(express.json());
+
+// Define routes
+app.get('/search', async (req, res) => {
+    const name = req.query.name;
+    try { // find the mentors by names
+        const entries = await Mentor.find({ name: new RegExp(name, 'i') }); // case-insensitive search
+        res.json(entries);
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
+});
+
+app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
+});
+
+app.get('/search', async (req, res) => {
+    const name = req.query.name;
+    try {
+        const entries = await Entry.find({ name: new RegExp(name, 'i') }); // case-insensitive search
+        res.json(entries);
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
+});
+
