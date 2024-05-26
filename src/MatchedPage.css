@@ -50,3 +50,7 @@
     margin-top: 10px; /* Adjust this margin as needed */
     font-size: 1.5em; /* Adjust the font size as needed */
 }
+
+.check {
+    color: white;
+}

@@ -1,9 +1,11 @@
 import { useState } from "react";
 //import './Forms.css';
 import axios from "axios";
-// import { useHistory } from 'react-router-dom';
+import { useHistory } from "react-router-dom";
 
 const Forms = () => {
+    const history = useHistory();
+
     const [name, setName] = useState('');
     const [bio, setBio] = useState('');
     const [age, setAge] = useState('');
@@ -45,6 +47,11 @@ const Forms = () => {
         axios.request(options)
           .then(response => {
             console.log(response.data);
+            // Navigate to MatchedPage with state
+            history.push({
+                pathname: '/matched',
+                state: { data: response.data } // Pass response data as state
+            });
           })
           .catch(error => {
             console.error('There was an error!', error);

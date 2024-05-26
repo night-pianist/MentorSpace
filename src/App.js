@@ -18,8 +18,8 @@ const App = () => (
   >
     <Router>
       <Routes>
-        {/* <Route path="/" element={<LandingPage />} />
-        <Route path="/after-login" element={<AfterLoginPage />} /> */}
+        {/* <Route path="/" element={<LandingPage />} />  */}
+        {/* <Route path="/after-login" element={<AfterLoginPage />} />  */}
         {/* Add other routes if needed */}
         <Route path="/" element={<MatchedPage />} />
       </Routes>
