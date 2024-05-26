@@ -4,7 +4,7 @@ import sky from './media/sky.png';
 import circle from './media/title-sparkle-circle.svg'
 import logo from './media/logo.svg'
 import './LandingPage.css';
-import { Link, useNavigate, Navigate } from 'react-router-dom';
+import { Link, useNavigate,} from 'react-router-dom';
 import { useKindeAuth } from '@kinde-oss/kinde-auth-react';
 
 const LandingPage = () => {

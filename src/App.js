@@ -11,14 +11,14 @@ const App = () => (
   <KindeProvider
     clientId="7976ca998c64493aa23e2b14d51b87d8"
     domain="https://mentorspace.kinde.com"
-    redirectUri="http://localhost:3000"
-    logoutUri="http://localhost:3000"
+    redirectUri="http://localhost:3001"
+    logoutUri="http://localhost:3001"
   >
     <Router>
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/form" element={<Forms />} />
-        <Route path="/MatchedPage" element={<MatchedPage />} />
+        <Route path="/form/MatchedPage" element={<MatchedPage />} />
       </Routes>
     </Router>
   </KindeProvider>
