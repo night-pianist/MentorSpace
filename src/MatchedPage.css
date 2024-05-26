@@ -4,7 +4,6 @@
     background-color: #07071f;
     display: flex;
     text-align: center;
-    /* justify-content: center;  */
     align-items: center;
     height: 100vh; 
     flex-direction: column;
@@ -35,6 +34,6 @@
 
 .mentor-name {
     padding: 20px;
-    margin-left: 100px;
+    margin: 100px;
     align-self: flex-start; 
 }

@@ -28,7 +28,7 @@ For the field of study/work, major, career aspirations, interests/hobbies, locat
 Once you have finished comparing a mentor to the mentee, sum up all the match values and find the average match value for that mentor.
 
 3. OUTPUT
-Return an array of strings. The array will contain a concatenated string of the mentor’s name and their corresponding match value, there will be a comma and a space character separating the mtnros’ name and match value. You will not output anything else. You do not need to write any descriptions or explanations.The array will be sorted in decreasing order of match values. In the case where two or more mentors have the same exact match value, sort them by alphabetical order using their name. 
+Return an array of strings. The array will contain a concatenated string of the mentor’s name, their corresponding match value, their field_of_study, and their career_aspirations. There will be a comma and a space character separating different fields. You will not output anything else. You do not need to write any descriptions or explanations.The array will be sorted in decreasing order of match values. In the case where two or more mentors have the same exact match value, sort them by alphabetical order using their name. 
 
 
 HERE ARE SOME EXAMPLES SO YOU FURTHER UNDERSTAND
@@ -70,5 +70,5 @@ Now calculate the average match value for mentorC. 100+0+0+0+0=100. Then 100/5=2
 
 3. OUTPUT
 Your output will be: 
-[“mentorB, 93”, “mentorA, 41”, “mentorC, 20”] 
+[“mentorB, 93, computer science, networking”, “mentorA, 41, mechanics, aerospace”, “mentorC, 20, arts, visual art”] 
 This will be the only thing you will output. No extra descriptions.
