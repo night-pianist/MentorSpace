@@ -25,7 +25,7 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
 
-        <h1 className="title tilt-warp">MentorSpace</h1>
+        <h1 className="title1 tilt-warp">MentorSpace</h1>
       <div className="btn-container reddit-mono">
         <Link to="/" className="home-link">
             <img src={logo} alt="Home" className="home-icon" />
