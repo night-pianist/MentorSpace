@@ -32,11 +32,11 @@
 
 .rocket-img {
   overflow: hidden;
-  height: 750px;
-  width: 550px;
+  height: 820px;
+  width: 600px;
   position: absolute;
   left: 0px;
-  transform: translateY(50px) translateX(-100px) rotate(20deg);
+  transform: translateY(50px) translateX(-100px) rotate(18deg);
   animation: flyIn 1.4s ease forwards;
 }
 
@@ -46,8 +46,8 @@
     top: 500px; 
   }
   to { 
-    left: 200px;
-    top: 70px; 
+    left: 180px;
+    top: 50px; 
   }
 }
 
@@ -56,7 +56,7 @@
   width: 700px;
   height: auto;
   position: absolute;
-  left: 50%;
+  left: 49%;
   top: 180px;
 }
 
@@ -100,15 +100,14 @@
 .tilt-warp {
   z-index: 1;
   position: absolute;
-  left: 62%;
-  top: 325px;
+  left: 45%;
+  top: 10%;
   font-family: "Tilt Warp", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "XROT" 0, "YROT" 0;
   color: white;
-  font-size: 120px;
 }
 
 .reddit-mono {
@@ -210,3 +209,6 @@
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
+.title {
+  font-size: 220px;
+}
