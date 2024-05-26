@@ -80,13 +80,26 @@
 .button-64:active,
 .button-64:hover {
   background: #AF40FF;
-  transition: 500ms;
+  outline: 0;
 }
+
+.button-64 span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+/* .button-64:hover span {
+  background: none;
+} */
 
 @media (min-width: 768px) {
   .button-64 {
-    font-size: 20px;
-    min-width: 126px;
+    font-size: 24px;
+    min-width: 156px;
     min-height: 40px;
   }
 }
