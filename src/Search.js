@@ -25,7 +25,9 @@ const Search = () => {
             <button onClick={handleSearch}>Search</button>
             <ul>
                 {results.map((result, index) => (
-                    <li key={index}>{result.name}</li>
+                    <li key={index}>
+                        {result.name} - {result.age}
+                    </li>
                 ))}
             </ul>
         </div>
