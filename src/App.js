@@ -3,7 +3,6 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { KindeProvider } from '@kinde-oss/kinde-auth-react';
 import LandingPage from './LandingPage';
-import AfterLoginPage from './AfterLoginPage';
 import MatchedPage from './MatchedPage';
 import Forms from './Forms';
 // import other components if needed
@@ -19,7 +18,7 @@ const App = () => (
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/form" element={<Forms />} />
-        <Route path="/match" element={<MatchedPage />} />
+        <Route path="/MatchedPage" element={<MatchedPage />} />
       </Routes>
     </Router>
   </KindeProvider>
