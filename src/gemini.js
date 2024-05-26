@@ -1,7 +1,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 // Access your API key (see "Set up your API key" above)
-const genAI = new GoogleGenerativeAI("AIzaSyAqUCPu2C3BrFCf2urbF6aksW_bRs0prjc");
+const genAI = new GoogleGenerativeAI(process.env.API_KEY);
 
 
 export default async function getRankedList(prompt) {
