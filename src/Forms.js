@@ -1,10 +1,12 @@
 import { useState } from "react";
+import React from 'react';
+import ReactDOM from 'react-dom';
 //import './Forms.css';
 import axios from "axios";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Forms = () => {
-    const history = useHistory();
+    const navigation = useNavigate();
 
     const [name, setName] = useState('');
     const [bio, setBio] = useState('');
@@ -47,11 +49,7 @@ const Forms = () => {
         axios.request(options)
           .then(response => {
             console.log(response.data);
-            // Navigate to MatchedPage with state
-            history.push({
-                pathname: '/matched',
-                state: { data: response.data } // Pass response data as state
-            });
+            navigation.navigate('Matched', { data: response.data });
           })
           .catch(error => {
             console.error('There was an error!', error);
