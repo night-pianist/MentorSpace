@@ -1,13 +1,26 @@
+import React from 'react';
 import './App.css';
-import Navbar from './Navbar';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { KindeProvider } from '@kinde-oss/kinde-auth-react';
+import LandingPage from './LandingPage';
+import AfterLoginPage from './AfterLoginPage';
+// import other components if needed
 
-function App() {
-  return (
-    <div className="App">
-      <Navbar />
-      <h1>Hello World!</h1>
-    </div>
-  );
-}
+const App = () => (
+  <KindeProvider
+    clientId="7976ca998c64493aa23e2b14d51b87d8"
+    domain="https://mentorspace.kinde.com"
+    redirectUri="http://localhost:3000"
+    logoutUri="http://localhost:3000"
+  >
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/after-login" element={<AfterLoginPage />} />
+        {/* Add other routes if needed */}
+      </Routes>
+    </Router>
+  </KindeProvider>
+);
 
 export default App;
