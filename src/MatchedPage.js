@@ -1,6 +1,7 @@
 import pfp from './media/pfp.png';
+import {useState} from 'react';
+import axios from 'axios';
 // const rankedMentors = require('./fileWhereRankedListIsDefined');
-import { rankedMentors } from '../../profile.js';
 
 const MatchedPage = () => {
     const [name, setName] = useState('');
