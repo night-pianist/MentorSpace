@@ -10,7 +10,7 @@ const AfterLoginPage = () => {
   return (
     <div className="after-login-page">
       <div className="btn-container">
-        <button onClick={logout} className="button-64" type="button">Log Out</button>
+        <button onClick={logout} className="button-64 reddit-mono" type="button">Log Out</button>
       </div>
       <img src={sky} alt="sky" className="sky-img" />
       <img src={rocket} alt="rocket" className="rocket-img" />
