@@ -1,9 +1,13 @@
 import { useState } from "react";
+import React from 'react';
+import ReactDOM from 'react-dom';
 //import './Forms.css';
 import axios from "axios";
-// import { useHistory } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 const Forms = () => {
+    const navigation = useNavigate();
+
     const [name, setName] = useState('');
     const [bio, setBio] = useState('');
     const [age, setAge] = useState('');
@@ -45,6 +49,10 @@ const Forms = () => {
         axios.request(options)
           .then(response => {
             console.log(response.data);
+            // navigation.state = response.data;
+            // navigation.formAction = navigation.location."./MatchedPage";
+            
+             navigation('./MatchedPage?data='+encodeURIComponent(response.data.message)+'');
           })
           .catch(error => {
             console.error('There was an error!', error);

@@ -19,7 +19,7 @@ const App = () => (
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/form" element={<Forms />} />
-        <Route path="/match" element={<MatchedPage />} />
+        <Route path="/MatchedPage" element={<MatchedPage />} />
       </Routes>
     </Router>
   </KindeProvider>
