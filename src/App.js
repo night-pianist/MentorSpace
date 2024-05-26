@@ -21,7 +21,7 @@ const App = () => (
         {/* <Route path="/" element={<LandingPage />} />
         <Route path="/after-login" element={<AfterLoginPage />} /> */}
         {/* Add other routes if needed */}
-        <Route path="/" element={<MatchedPage />} />
+        <Route path="/" element={<Forms />} />
       </Routes>
     </Router>
   </KindeProvider>

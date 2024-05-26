@@ -1,0 +1,74 @@
+/* forms.css */
+
+body {
+    background-color: #1a1a3d; /* Dark background to match the space theme */
+    color: #ffffff; /* White text for good contrast */
+    font-family: 'Arial', sans-serif; /* Clean, sans-serif font */
+}
+
+.form {
+    background-color: #2a2a72; /* Slightly lighter than background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    margin: 50px auto; /* Center the form horizontally */
+}
+
+.form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form label {
+    margin: 10px 0 5px;
+}
+
+.form input, .form select, .form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3a3a9f; /* Input field background */
+    color: #ffffff; /* Input field text color */
+}
+
+.form input::placeholder, .form textarea::placeholder {
+    color: #cccccc; /* Placeholder text color */
+}
+
+.form textarea {
+    resize: vertical; /* Allow vertical resize */
+    height: 100px; /* Default height for textarea */
+}
+
+.form button {
+    background-color: #4a4ae3; /* Button background */
+    color: #ffffff; /* Button text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+    background-color: #5a5af6; /* Button background on hover */
+}
+
+/* Additional styles for a more polished look */
+.form input[type="text"], .form input[type="email"], .form input[type="number"], .form input[type="tel"], .form select, .form textarea {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.form input:focus, .form select:focus, .form textarea:focus {
+    outline: none;
+    background-color: #5252f3; /* Input field background on focus */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.form input[type="text"], .form input[type="email"], .form input[type="number"], .form input[type="tel"] {
+    height: 40px;
+}
