@@ -1,7 +1,7 @@
 import pfp from './media/pfp.png';
 import {useState} from 'react';
 import axios from 'axios';
-
+// const rankedMentors = require('./fileWhereRankedListIsDefined');
 
 const MatchedPage = () => {
     const [name, setName] = useState('');
@@ -28,7 +28,6 @@ const MatchedPage = () => {
                 <h5 className="mentor-des">more info about ur mentor</h5>
                 <img src={pfp} alt="pfp" className="pfp-img" />
             </div>
-            <button onClick={printRankedMentors}>press</button>
         </div>
      );
 }
