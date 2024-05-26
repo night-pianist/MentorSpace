@@ -2,7 +2,7 @@ import { useState } from "react";
 import './Forms.css';
 // import { useHistory } from 'react-router-dom';
 
-const Forms = () => {
+const MenteeForms = () => {
     const [name, setName] = useState('');
     const [bio, setBio] = useState('');
     const [age, setAge] = useState('');
@@ -150,4 +150,4 @@ const Forms = () => {
     );
 }
 
-export default Forms;
+export default MenteeForms;

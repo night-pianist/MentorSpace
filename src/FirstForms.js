@@ -1,15 +1,22 @@
 import { useState } from "react";
 import './Forms.css';
+import { useNavigate } from 'react-router-dom';
 // import { useHistory } from 'react-router-dom';
 
 const FirstForms = () => {
-    const [mentorStatus, setMentorStatus] = useState('');
+    const [mentorStatus, setMentorStatus] = useState('mentor');
+    const navigate = useNavigate();
     
     const handleSubmit = (e) => {
         e.preventDefault();
         const status = { mentorStatus };
 
         console.log(status);
+        if (mentorStatus === "mentor") 
+            navigate("/mentor-form");
+        else {
+            navigate("/mentee-form");
+        }
     }
 
     return ( 
@@ -25,7 +32,8 @@ const FirstForms = () => {
                     <option value="mentee">Mentee</option>
                 </select>
                 
-                <button type="submit">Submit</button>
+                <button onClick={handleSubmit} type="submit">Submit</button>
+                
             </form>
         </div>
     );
