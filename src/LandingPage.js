@@ -12,7 +12,7 @@ const LandingPage = () => {
 
   useEffect(() => {
     if (isAuthenticated) {
-      navigate('/after-login');
+      navigate('/form');
     }
   }, [isAuthenticated, navigate]);
 
@@ -20,10 +20,6 @@ const LandingPage = () => {
     // Perform login logic
     await login(); // Wait for login process to complete
   };
-
-  if (isAuthenticated) {
-    return <Navigate to="/after-login" />;
-  }
 
   return (
     <div className="landing-page">
