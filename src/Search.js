@@ -1,8 +1,7 @@
-import pfp from './media/pfp.png';
 import {useState} from 'react';
 import axios from 'axios';
 
-const MatchedPage = () => {
+const Search = () => {
     const [name, setName] = useState('');
     const [results, setResults] = useState([]);
 
@@ -15,34 +14,24 @@ const MatchedPage = () => {
         }
     };
 
-    return (         
-        <div className="matched-page">
-            <div className="title">
-                <h2>Welcome aboard!</h2>
-                <h3>Your captain is...</h3>
-            </div>
-            <div className="content-holder">
-                <img src={pfp} alt="pfp" className="pfp-img" />
-                <h3 className="mentor-name">Jasmine!</h3>
-                <h5 className="mentor-des">more info about ur mentor</h5>
-                <img src={pfp} alt="pfp" className="pfp-img" />
-            </div>
-            {/* <input
+    return (
+        <div className="search">
+            <input
                 type="text"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Search by name"
-            /> */}
-            {/* <button onClick={handleSearch}>Search</button>
+            />
+            <button onClick={handleSearch}>Search</button>
             <ul>
                 {results.map((result, index) => (
                     <li key={index}>
                         {result.name} - {result.age}
                     </li>
                 ))}
-            </ul> */}
+            </ul>
         </div>
-     );
+    );
 }
  
-export default MatchedPage;
+export default Search;

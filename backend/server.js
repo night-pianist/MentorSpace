@@ -61,6 +61,7 @@ const mongoose = require('mongoose');
 const Mentee = require('./models/Mentee');
 const Mentor = require('./models/Mentor');
 const dotenv = require('dotenv');
+const cors = require('cors');
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 dotenv.config();
@@ -73,6 +74,7 @@ const genAI = new GoogleGenerativeAI("AIzaSyAqUCPu2C3BrFCf2urbF6aksW_bRs0prjc");
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(cors());
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
@@ -137,6 +139,17 @@ app.post('/submit-form', async (req, res) => {
     } catch (error) {
         console.error('Error handling form submission 11111:', error);
         res.status(500).json({ error: 'An error occurred while handling form submission' });
+    }
+});
+
+// Route to search mentors
+app.get('/search', async (req, res) => {
+    const name = req.query.name;
+    try {
+        const entries = await Mentor.find({ name: new RegExp(name, 'i') }); // case-insensitive search
+        res.json(entries);
+    } catch (error) {
+        res.status(500).json({ message: error.message });
     }
 });
 
