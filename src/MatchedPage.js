@@ -28,7 +28,6 @@ const MatchedPage = () => {
                 <h5 className="mentor-des">more info about ur mentor</h5>
                 <img src={pfp} alt="pfp" className="pfp-img" />
             </div>
-            <button onClick={printRankedMentors}>press</button>
         </div>
      );
 }
