@@ -1,12 +1,8 @@
 import pfp from './media/pfp.png';
 // const rankedMentors = require('./fileWhereRankedListIsDefined');
-import { rankedMentors } from '../../profile.js';
 
 const MatchedPage = () => {
-    const printRankedMentors = () => {
-        console.log(rankedMentors);
-    }
-    return ( 
+    return (         
         <div className="matched-page">
             <div className="title">
                 <h2>Welcome aboard!</h2>
@@ -17,7 +13,6 @@ const MatchedPage = () => {
                 <h3 className="mentor-name">Jasmine!</h3>
                 <img src={pfp} alt="pfp" className="pfp-img" />
             </div>
-            <button onClick={printRankedMentors}>press</button>
         </div>
      );
 }

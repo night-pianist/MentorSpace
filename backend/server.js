@@ -74,6 +74,7 @@ const genAI = new GoogleGenerativeAI("AIzaSyAqUCPu2C3BrFCf2urbF6aksW_bRs0prjc");
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(cors());
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
@@ -141,21 +142,10 @@ app.post('/submit-form', async (req, res) => {
     }
 });
 
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
-});
-
-// searches entries in mongodb based on name
-const port = 3000;
-
-// Middleware
-app.use(cors());
-app.use(express.json());
-
-// Define routes
+// Route to search mentors
 app.get('/search', async (req, res) => {
     const name = req.query.name;
-    try { // find the mentors by names
+    try {
         const entries = await Mentor.find({ name: new RegExp(name, 'i') }); // case-insensitive search
         res.json(entries);
     } catch (error) {
@@ -163,17 +153,6 @@ app.get('/search', async (req, res) => {
     }
 });
 
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
 });
-
-app.get('/search', async (req, res) => {
-    const name = req.query.name;
-    try {
-        const entries = await Entry.find({ name: new RegExp(name, 'i') }); // case-insensitive search
-        res.json(entries);
-    } catch (error) {
-        res.status(500).json({ message: error.message });
-    }
-});
-
