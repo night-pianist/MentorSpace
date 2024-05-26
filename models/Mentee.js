@@ -13,7 +13,8 @@ const menteeSchema = new mongoose.Schema({
     interests: [String],
     socialLinks: {
         linkedIn: String,
-        instagram: String
+        email: String,
+        phone: String,
     },
     role: String,
 });

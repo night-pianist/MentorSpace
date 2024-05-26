@@ -12,9 +12,10 @@ const mentorSchema = new mongoose.Schema({
     careerAspirations: String,
     interests: [String],
     socialLinks: {
-        linkedIn: String,
-        instagram: String
-    },
+      linkedIn: String,
+      email: String,
+      phone: String,
+  },
     role: String,
 });
 
