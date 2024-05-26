@@ -31,3 +31,9 @@
     width: auto;
     border-radius: 1000px;
 }
+
+.mentor-name {
+    padding: 20px;
+    margin-left: 100px;
+    align-self: flex-start; 
+}

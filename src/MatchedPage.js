@@ -9,7 +9,7 @@ const MatchedPage = () => {
             </div>
             <div className="content-holder">
                 <img src={pfp} alt="pfp" className="pfp-img" />
-                <h3>Jasmine!</h3>
+                <h3 className="mentor-name">Jasmine!</h3>
             </div>
         </div>
      );
