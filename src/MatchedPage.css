@@ -11,8 +11,8 @@
 
 .title {
     /* position: fixed; */
-    padding: 20px;
-    padding-bottom: 50px;
+    padding: 40px;
+    padding-bottom: 100px;
     z-index: 999; /* Set a high z-index to ensure the element appears on top */
     color: white;
     font-size: 2.5em;
@@ -27,13 +27,26 @@
 }
 
 .pfp-img {
-    height: 400px;
+    height: 350px;
     width: auto;
     border-radius: 1000px;
 }
 
 .mentor-name {
-    padding: 20px;
+    padding: 40px;
     margin: 100px;
+    font-size: 4em;
     align-self: flex-start; 
+}
+
+.mentor-des {
+    padding: 40px;
+    margin: 100px;
+    font-size: 4em;
+    align-self: flex-start; 
+}
+
+.mentor-des {
+    margin-top: 10px; /* Adjust this margin as needed */
+    font-size: 1.5em; /* Adjust the font size as needed */
 }
