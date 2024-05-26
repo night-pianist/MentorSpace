@@ -49,7 +49,10 @@ const Forms = () => {
         axios.request(options)
           .then(response => {
             console.log(response.data);
-            navigation.navigate('Matched', { data: response.data });
+            // navigation.state = response.data;
+            // navigation.formAction = navigation.location."./MatchedPage";
+            
+             navigation('./MatchedPage?data='+encodeURIComponent(response.data.message)+'');
           })
           .catch(error => {
             console.error('There was an error!', error);
