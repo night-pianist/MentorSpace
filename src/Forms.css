@@ -1,3 +1,13 @@
-.form input {
-    display: in-line block;
-}
+* {
+    background: none;
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .form {
+    /* background: #07071f; */
+    min-height: 100vh;
+    min-width: 100vw;  /* min width is 100% of the viewport width */
+  }
+  
