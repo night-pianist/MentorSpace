@@ -92,7 +92,7 @@
 
 @media (min-width: 768px) {
   .button-64 {
-    font-size: 20px;
+    font-size: 18px;
     min-width: 126px;
     min-height: 40px;
   }
@@ -114,4 +114,16 @@
 
 .reddit-mono {
   font-family: "Reddit Mono", monospace;
+}
+
+.home-link {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 999; /* Ensure it's above other content */
+}
+
+.home-icon {
+  width: 50px; /* Adjust the size as needed */
+  height: auto;
 }
