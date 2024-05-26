@@ -122,6 +122,7 @@ app.post('/submit-form', async (req, res) => {
 
             // Send data to Google Generative AI and get the ranked list
             const rankedMentors = await getRankedList(prompt);
+            module.exports = rankedMentors; // export the module
 
             console.log(rankedMentors);
         } else if (formData.role === 'mentor') {
